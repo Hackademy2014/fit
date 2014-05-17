@@ -32,6 +32,9 @@
 		922F938B192783A7006A6FFB /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F937F192783A7006A6FFB /* JSONKeyMapper.m */; };
 		922F938C192783A7006A6FFB /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F9381192783A7006A6FFB /* JSONValueTransformer.m */; };
 		922F939119278410006A6FFB /* LICENSE_jsonmodel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 922F939019278410006A6FFB /* LICENSE_jsonmodel.txt */; };
+		922F93B71927BD10006A6FFB /* FITGivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F93B61927BD10006A6FFB /* FITGivingViewController.m */; };
+		922F93BA1927BD26006A6FFB /* FITGivingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F93B91927BD26006A6FFB /* FITGivingModel.m */; };
+		922F93BD1927BD31006A6FFB /* FITCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F93BC1927BD31006A6FFB /* FITCategoryModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,12 @@
 		922F9380192783A7006A6FFB /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		922F9381192783A7006A6FFB /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		922F939019278410006A6FFB /* LICENSE_jsonmodel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_jsonmodel.txt; sourceTree = "<group>"; };
+		922F93B51927BD10006A6FFB /* FITGivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITGivingViewController.h; sourceTree = "<group>"; };
+		922F93B61927BD10006A6FFB /* FITGivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITGivingViewController.m; sourceTree = "<group>"; };
+		922F93B81927BD26006A6FFB /* FITGivingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITGivingModel.h; sourceTree = "<group>"; };
+		922F93B91927BD26006A6FFB /* FITGivingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITGivingModel.m; sourceTree = "<group>"; };
+		922F93BB1927BD31006A6FFB /* FITCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITCategoryModel.h; sourceTree = "<group>"; };
+		922F93BC1927BD31006A6FFB /* FITCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITCategoryModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +157,7 @@
 		922F933A19277DF1006A6FFB /* Placeholder */ = {
 			isa = PBXGroup;
 			children = (
+				922F93B41927BCE1006A6FFB /* Giving */,
 				922F934319277DF1006A6FFB /* FITAppDelegate.h */,
 				922F934419277DF1006A6FFB /* FITAppDelegate.m */,
 				922F934619277DF1006A6FFB /* Images.xcassets */,
@@ -248,6 +258,19 @@
 			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
+		922F93B41927BCE1006A6FFB /* Giving */ = {
+			isa = PBXGroup;
+			children = (
+				922F93B51927BD10006A6FFB /* FITGivingViewController.h */,
+				922F93B61927BD10006A6FFB /* FITGivingViewController.m */,
+				922F93B81927BD26006A6FFB /* FITGivingModel.h */,
+				922F93B91927BD26006A6FFB /* FITGivingModel.m */,
+				922F93BB1927BD31006A6FFB /* FITCategoryModel.h */,
+				922F93BC1927BD31006A6FFB /* FITCategoryModel.m */,
+			);
+			name = Giving;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922F93B71927BD10006A6FFB /* FITGivingViewController.m in Sources */,
 				922F9389192783A7006A6FFB /* JSONHTTPClient.m in Sources */,
 				922F9384192783A7006A6FFB /* JSONModelArray.m in Sources */,
 				922F9386192783A7006A6FFB /* JSONModelError.m in Sources */,
@@ -353,11 +377,13 @@
 				922F934519277DF1006A6FFB /* FITAppDelegate.m in Sources */,
 				922F9383192783A7006A6FFB /* JSONModel.m in Sources */,
 				922F938B192783A7006A6FFB /* JSONKeyMapper.m in Sources */,
+				922F93BA1927BD26006A6FFB /* FITGivingModel.m in Sources */,
 				922F938A192783A7006A6FFB /* JSONModel+networking.m in Sources */,
 				922F9387192783A7006A6FFB /* NSArray+JSONModel.m in Sources */,
 				922F934119277DF1006A6FFB /* main.m in Sources */,
 				922F9382192783A7006A6FFB /* JSONModel+CoreData.m in Sources */,
 				922F9385192783A7006A6FFB /* JSONModelClassProperty.m in Sources */,
+				922F93BD1927BD31006A6FFB /* FITCategoryModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +580,7 @@
 				922F935F19277DF1006A6FFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		922F936019277DF1006A6FFB /* Build configuration list for PBXNativeTarget "PlaceholderTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +589,7 @@
 				922F936219277DF1006A6FFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
