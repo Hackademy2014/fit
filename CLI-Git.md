@@ -21,3 +21,21 @@ git config --global user.email
 git config --global core.autocrlf input
 git config --global color.vi true
 ```
+
+Binary File Woes? Rebase!
+
+1) Get a fresh clone
+```
+git clone https://github.com/Hackademy2014/fit.git
+cd fit/
+```
+
+2) Reset to the last known good point
+```
+git reset --hard HEAD~3
+```
+
+3) Push this state, essentially rewritting history
+```
+git push -f
+```
