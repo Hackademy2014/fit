@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Families In Transition. All rights reserved.
 //
 
-#import "FITFirstViewController.h"
+#import "FITAboutViewController.h"
 
-@interface FITFirstViewController ()
+@interface FITAboutViewController ()
 
 @end
 
-@implementation FITFirstViewController
+@implementation FITAboutViewController
 
 - (void)viewDidLoad
 {

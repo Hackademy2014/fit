@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FITFirstViewController : UIViewController
+@interface FITAboutViewController : UIViewController
 
 @end
