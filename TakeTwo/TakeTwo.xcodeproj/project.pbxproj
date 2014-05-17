@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7514F52F1927F82200A6C3CE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7514F52E1927F82200A6C3CE /* EventKit.framework */; };
+		7546F68A19281F0500BFEF41 /* Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7546F68419281F0500BFEF41 /* Banner.png */; };
+		7546F68B19281F0500BFEF41 /* butterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = 7546F68519281F0500BFEF41 /* butterfly.png */; };
+		7546F68C19281F0500BFEF41 /* family_hug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7546F68619281F0500BFEF41 /* family_hug.jpg */; };
+		7546F68D19281F0500BFEF41 /* Family_Place_Project.png in Resources */ = {isa = PBXBuildFile; fileRef = 7546F68719281F0500BFEF41 /* Family_Place_Project.png */; };
+		7546F68E19281F0500BFEF41 /* Gift_Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 7546F68819281F0500BFEF41 /* Gift_Home.png */; };
+		7546F68F19281F0500BFEF41 /* I_Am_One_Event.png in Resources */ = {isa = PBXBuildFile; fileRef = 7546F68919281F0500BFEF41 /* I_Am_One_Event.png */; };
+		7546F69719281F5200BFEF41 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = 7546F69019281F5200BFEF41 /* aboutUs.html */; };
+		7546F69819281F5200BFEF41 /* FITSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7546F69219281F5200BFEF41 /* FITSecondViewController.m */; };
+		7546F69919281F5200BFEF41 /* FITVolunteerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7546F69419281F5200BFEF41 /* FITVolunteerViewController.m */; };
+		7546F69A19281F5200BFEF41 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7546F69519281F5200BFEF41 /* style.css */; };
+		7546F69B19281F5200BFEF41 /* volunteer.html in Resources */ = {isa = PBXBuildFile; fileRef = 7546F69619281F5200BFEF41 /* volunteer.html */; };
 		9238F8121927DDE10020F176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8111927DDE10020F176 /* Foundation.framework */; };
 		9238F8141927DDE10020F176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8131927DDE10020F176 /* CoreGraphics.framework */; };
 		9238F8161927DDE10020F176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8151927DDE10020F176 /* UIKit.framework */; };
@@ -56,6 +67,19 @@
 
 /* Begin PBXFileReference section */
 		7514F52E1927F82200A6C3CE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		7546F68419281F0500BFEF41 /* Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banner.png; sourceTree = "<group>"; };
+		7546F68519281F0500BFEF41 /* butterfly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly.png; sourceTree = "<group>"; };
+		7546F68619281F0500BFEF41 /* family_hug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = family_hug.jpg; sourceTree = "<group>"; };
+		7546F68719281F0500BFEF41 /* Family_Place_Project.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Family_Place_Project.png; sourceTree = "<group>"; };
+		7546F68819281F0500BFEF41 /* Gift_Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gift_Home.png; sourceTree = "<group>"; };
+		7546F68919281F0500BFEF41 /* I_Am_One_Event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = I_Am_One_Event.png; sourceTree = "<group>"; };
+		7546F69019281F5200BFEF41 /* aboutUs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutUs.html; sourceTree = "<group>"; };
+		7546F69119281F5200BFEF41 /* FITSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSecondViewController.h; sourceTree = "<group>"; };
+		7546F69219281F5200BFEF41 /* FITSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSecondViewController.m; sourceTree = "<group>"; };
+		7546F69319281F5200BFEF41 /* FITVolunteerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITVolunteerViewController.h; sourceTree = "<group>"; };
+		7546F69419281F5200BFEF41 /* FITVolunteerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITVolunteerViewController.m; sourceTree = "<group>"; };
+		7546F69519281F5200BFEF41 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		7546F69619281F5200BFEF41 /* volunteer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = volunteer.html; sourceTree = "<group>"; };
 		9238F80E1927DDE10020F176 /* TakeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238F8111927DDE10020F176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9238F8131927DDE10020F176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,9 +166,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7546F68219281F0500BFEF41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7546F68319281F0500BFEF41 /* Images */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		7546F68319281F0500BFEF41 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7546F68419281F0500BFEF41 /* Banner.png */,
+				7546F68519281F0500BFEF41 /* butterfly.png */,
+				7546F68619281F0500BFEF41 /* family_hug.jpg */,
+				7546F68719281F0500BFEF41 /* Family_Place_Project.png */,
+				7546F68819281F0500BFEF41 /* Gift_Home.png */,
+				7546F68919281F0500BFEF41 /* I_Am_One_Event.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		9238F8051927DDE10020F176 = {
 			isa = PBXGroup;
 			children = (
+				7546F68219281F0500BFEF41 /* Resources */,
 				9238F8521927E31F0020F176 /* JSONModel */,
 				9238F8171927DDE10020F176 /* TakeTwo */,
 				9238F8391927DDE10020F176 /* TakeTwoTests */,
@@ -177,6 +224,13 @@
 		9238F8171927DDE10020F176 /* TakeTwo */ = {
 			isa = PBXGroup;
 			children = (
+				7546F69019281F5200BFEF41 /* aboutUs.html */,
+				7546F69119281F5200BFEF41 /* FITSecondViewController.h */,
+				7546F69219281F5200BFEF41 /* FITSecondViewController.m */,
+				7546F69319281F5200BFEF41 /* FITVolunteerViewController.h */,
+				7546F69419281F5200BFEF41 /* FITVolunteerViewController.m */,
+				7546F69519281F5200BFEF41 /* style.css */,
+				7546F69619281F5200BFEF41 /* volunteer.html */,
 				9238F87B1927E32D0020F176 /* Giving */,
 				9238F8201927DDE10020F176 /* FITAppDelegate.h */,
 				9238F8211927DDE10020F176 /* FITAppDelegate.m */,
@@ -382,9 +436,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9238F87A1927E31F0020F176 /* LICENSE_jsonmodel.txt in Resources */,
+				7546F69A19281F5200BFEF41 /* style.css in Resources */,
 				9238F82D1927DDE10020F176 /* Images.xcassets in Resources */,
+				7546F68A19281F0500BFEF41 /* Banner.png in Resources */,
+				7546F69719281F5200BFEF41 /* aboutUs.html in Resources */,
 				9238F81C1927DDE10020F176 /* InfoPlist.strings in Resources */,
+				7546F68C19281F0500BFEF41 /* family_hug.jpg in Resources */,
+				7546F68F19281F0500BFEF41 /* I_Am_One_Event.png in Resources */,
 				9238F8251927DDE10020F176 /* Main.storyboard in Resources */,
+				7546F68E19281F0500BFEF41 /* Gift_Home.png in Resources */,
+				7546F68B19281F0500BFEF41 /* butterfly.png in Resources */,
+				7546F68D19281F0500BFEF41 /* Family_Place_Project.png in Resources */,
+				7546F69B19281F5200BFEF41 /* volunteer.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +471,11 @@
 				9238F8731927E31F0020F176 /* JSONModelError.m in Sources */,
 				9238F86F1927E31F0020F176 /* JSONModel+CoreData.m in Sources */,
 				9238F88A1927EC590020F176 /* FITDonationItemModel.m in Sources */,
+				7546F69919281F5200BFEF41 /* FITVolunteerViewController.m in Sources */,
 				9238F8511927E2D00020F176 /* FITGivingViewController.m in Sources */,
 				9238F8871927EBDA0020F176 /* FITCategory.m in Sources */,
 				9238F8221927DDE10020F176 /* FITAppDelegate.m in Sources */,
+				7546F69819281F5200BFEF41 /* FITSecondViewController.m in Sources */,
 				9238F84F1927E2D00020F176 /* FITCategoryModel.m in Sources */,
 				9238F8721927E31F0020F176 /* JSONModelClassProperty.m in Sources */,
 				9238F8741927E31F0020F176 /* NSArray+JSONModel.m in Sources */,
