@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9238F8121927DDE10020F176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8111927DDE10020F176 /* Foundation.framework */; };
+		9238F8141927DDE10020F176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8131927DDE10020F176 /* CoreGraphics.framework */; };
+		9238F8161927DDE10020F176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8151927DDE10020F176 /* UIKit.framework */; };
+		9238F81C1927DDE10020F176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9238F81A1927DDE10020F176 /* InfoPlist.strings */; };
+		9238F81E1927DDE10020F176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F81D1927DDE10020F176 /* main.m */; };
+		9238F8221927DDE10020F176 /* FITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8211927DDE10020F176 /* FITAppDelegate.m */; };
+		9238F8251927DDE10020F176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238F8231927DDE10020F176 /* Main.storyboard */; };
+		9238F8281927DDE10020F176 /* FITFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8271927DDE10020F176 /* FITFirstViewController.m */; };
+		9238F82B1927DDE10020F176 /* FITSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F82A1927DDE10020F176 /* FITSecondViewController.m */; };
+		9238F82D1927DDE10020F176 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238F82C1927DDE10020F176 /* Images.xcassets */; };
+		9238F8341927DDE10020F176 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8331927DDE10020F176 /* XCTest.framework */; };
+		9238F8351927DDE10020F176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8111927DDE10020F176 /* Foundation.framework */; };
+		9238F8361927DDE10020F176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8151927DDE10020F176 /* UIKit.framework */; };
+		9238F83E1927DDE10020F176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9238F83C1927DDE10020F176 /* InfoPlist.strings */; };
+		9238F8401927DDE10020F176 /* TakeTwoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F83F1927DDE10020F176 /* TakeTwoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9238F8371927DDE10020F176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9238F8061927DDE10020F176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9238F80D1927DDE10020F176;
+			remoteInfo = TakeTwo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9238F80E1927DDE10020F176 /* TakeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9238F8111927DDE10020F176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9238F8131927DDE10020F176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9238F8151927DDE10020F176 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9238F8191927DDE10020F176 /* TakeTwo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TakeTwo-Info.plist"; sourceTree = "<group>"; };
+		9238F81B1927DDE10020F176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9238F81D1927DDE10020F176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9238F81F1927DDE10020F176 /* TakeTwo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TakeTwo-Prefix.pch"; sourceTree = "<group>"; };
+		9238F8201927DDE10020F176 /* FITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FITAppDelegate.h; sourceTree = "<group>"; };
+		9238F8211927DDE10020F176 /* FITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FITAppDelegate.m; sourceTree = "<group>"; };
+		9238F8241927DDE10020F176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9238F8261927DDE10020F176 /* FITFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FITFirstViewController.h; sourceTree = "<group>"; };
+		9238F8271927DDE10020F176 /* FITFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FITFirstViewController.m; sourceTree = "<group>"; };
+		9238F8291927DDE10020F176 /* FITSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FITSecondViewController.h; sourceTree = "<group>"; };
+		9238F82A1927DDE10020F176 /* FITSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FITSecondViewController.m; sourceTree = "<group>"; };
+		9238F82C1927DDE10020F176 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9238F8321927DDE10020F176 /* TakeTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9238F8331927DDE10020F176 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9238F83B1927DDE10020F176 /* TakeTwoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TakeTwoTests-Info.plist"; sourceTree = "<group>"; };
+		9238F83D1927DDE10020F176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9238F83F1927DDE10020F176 /* TakeTwoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeTwoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9238F80B1927DDE10020F176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F8141927DDE10020F176 /* CoreGraphics.framework in Frameworks */,
+				9238F8161927DDE10020F176 /* UIKit.framework in Frameworks */,
+				9238F8121927DDE10020F176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9238F82F1927DDE10020F176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F8341927DDE10020F176 /* XCTest.framework in Frameworks */,
+				9238F8361927DDE10020F176 /* UIKit.framework in Frameworks */,
+				9238F8351927DDE10020F176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9238F8051927DDE10020F176 = {
+			isa = PBXGroup;
+			children = (
+				9238F8171927DDE10020F176 /* TakeTwo */,
+				9238F8391927DDE10020F176 /* TakeTwoTests */,
+				9238F8101927DDE10020F176 /* Frameworks */,
+				9238F80F1927DDE10020F176 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9238F80F1927DDE10020F176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9238F80E1927DDE10020F176 /* TakeTwo.app */,
+				9238F8321927DDE10020F176 /* TakeTwoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9238F8101927DDE10020F176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9238F8111927DDE10020F176 /* Foundation.framework */,
+				9238F8131927DDE10020F176 /* CoreGraphics.framework */,
+				9238F8151927DDE10020F176 /* UIKit.framework */,
+				9238F8331927DDE10020F176 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9238F8171927DDE10020F176 /* TakeTwo */ = {
+			isa = PBXGroup;
+			children = (
+				9238F8201927DDE10020F176 /* FITAppDelegate.h */,
+				9238F8211927DDE10020F176 /* FITAppDelegate.m */,
+				9238F8231927DDE10020F176 /* Main.storyboard */,
+				9238F8261927DDE10020F176 /* FITFirstViewController.h */,
+				9238F8271927DDE10020F176 /* FITFirstViewController.m */,
+				9238F8291927DDE10020F176 /* FITSecondViewController.h */,
+				9238F82A1927DDE10020F176 /* FITSecondViewController.m */,
+				9238F82C1927DDE10020F176 /* Images.xcassets */,
+				9238F8181927DDE10020F176 /* Supporting Files */,
+			);
+			path = TakeTwo;
+			sourceTree = "<group>";
+		};
+		9238F8181927DDE10020F176 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9238F8191927DDE10020F176 /* TakeTwo-Info.plist */,
+				9238F81A1927DDE10020F176 /* InfoPlist.strings */,
+				9238F81D1927DDE10020F176 /* main.m */,
+				9238F81F1927DDE10020F176 /* TakeTwo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9238F8391927DDE10020F176 /* TakeTwoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9238F83F1927DDE10020F176 /* TakeTwoTests.m */,
+				9238F83A1927DDE10020F176 /* Supporting Files */,
+			);
+			path = TakeTwoTests;
+			sourceTree = "<group>";
+		};
+		9238F83A1927DDE10020F176 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9238F83B1927DDE10020F176 /* TakeTwoTests-Info.plist */,
+				9238F83C1927DDE10020F176 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9238F80D1927DDE10020F176 /* TakeTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9238F8431927DDE10020F176 /* Build configuration list for PBXNativeTarget "TakeTwo" */;
+			buildPhases = (
+				9238F80A1927DDE10020F176 /* Sources */,
+				9238F80B1927DDE10020F176 /* Frameworks */,
+				9238F80C1927DDE10020F176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeTwo;
+			productName = TakeTwo;
+			productReference = 9238F80E1927DDE10020F176 /* TakeTwo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9238F8311927DDE10020F176 /* TakeTwoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9238F8461927DDE10020F176 /* Build configuration list for PBXNativeTarget "TakeTwoTests" */;
+			buildPhases = (
+				9238F82E1927DDE10020F176 /* Sources */,
+				9238F82F1927DDE10020F176 /* Frameworks */,
+				9238F8301927DDE10020F176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9238F8381927DDE10020F176 /* PBXTargetDependency */,
+			);
+			name = TakeTwoTests;
+			productName = TakeTwoTests;
+			productReference = 9238F8321927DDE10020F176 /* TakeTwoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9238F8061927DDE10020F176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FIT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Families In Transition";
+				TargetAttributes = {
+					9238F8311927DDE10020F176 = {
+						TestTargetID = 9238F80D1927DDE10020F176;
+					};
+				};
+			};
+			buildConfigurationList = 9238F8091927DDE10020F176 /* Build configuration list for PBXProject "TakeTwo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9238F8051927DDE10020F176;
+			productRefGroup = 9238F80F1927DDE10020F176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9238F80D1927DDE10020F176 /* TakeTwo */,
+				9238F8311927DDE10020F176 /* TakeTwoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9238F80C1927DDE10020F176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F82D1927DDE10020F176 /* Images.xcassets in Resources */,
+				9238F81C1927DDE10020F176 /* InfoPlist.strings in Resources */,
+				9238F8251927DDE10020F176 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9238F8301927DDE10020F176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F83E1927DDE10020F176 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9238F80A1927DDE10020F176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F8221927DDE10020F176 /* FITAppDelegate.m in Sources */,
+				9238F8281927DDE10020F176 /* FITFirstViewController.m in Sources */,
+				9238F82B1927DDE10020F176 /* FITSecondViewController.m in Sources */,
+				9238F81E1927DDE10020F176 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9238F82E1927DDE10020F176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F8401927DDE10020F176 /* TakeTwoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9238F8381927DDE10020F176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9238F80D1927DDE10020F176 /* TakeTwo */;
+			targetProxy = 9238F8371927DDE10020F176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9238F81A1927DDE10020F176 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9238F81B1927DDE10020F176 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9238F8231927DDE10020F176 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9238F8241927DDE10020F176 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9238F83C1927DDE10020F176 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9238F83D1927DDE10020F176 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9238F8411927DDE10020F176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9238F8421927DDE10020F176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9238F8441927DDE10020F176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TakeTwo/TakeTwo-Prefix.pch";
+				INFOPLIST_FILE = "TakeTwo/TakeTwo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9238F8451927DDE10020F176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TakeTwo/TakeTwo-Prefix.pch";
+				INFOPLIST_FILE = "TakeTwo/TakeTwo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9238F8471927DDE10020F176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TakeTwo.app/TakeTwo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TakeTwo/TakeTwo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TakeTwoTests/TakeTwoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9238F8481927DDE10020F176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TakeTwo.app/TakeTwo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TakeTwo/TakeTwo-Prefix.pch";
+				INFOPLIST_FILE = "TakeTwoTests/TakeTwoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9238F8091927DDE10020F176 /* Build configuration list for PBXProject "TakeTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9238F8411927DDE10020F176 /* Debug */,
+				9238F8421927DDE10020F176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9238F8431927DDE10020F176 /* Build configuration list for PBXNativeTarget "TakeTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9238F8441927DDE10020F176 /* Debug */,
+				9238F8451927DDE10020F176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9238F8461927DDE10020F176 /* Build configuration list for PBXNativeTarget "TakeTwoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9238F8471927DDE10020F176 /* Debug */,
+				9238F8481927DDE10020F176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9238F8061927DDE10020F176 /* Project object */;
+}
