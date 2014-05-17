@@ -1,0 +1,1104 @@
+/* 
+	Families in Transition 
+*/
+
+
+/*	======================
+	 GLOBAL STYLES =============================================================================
+============================ */
+* {
+	margin: 0; 
+	padding: 0;
+	}
+html, body { height: 100% } /* -----------Required to make footer stick to bottom - Adam --------- */
+body {
+	font: 12px Tahoma, Arial, sans-serif;
+	line-height: 1.66em; 
+	margin: 0; 
+	padding: 0; 
+	background-image:url(images/fit-bg.jpg); 
+	background-repeat: repeat-x; 
+	/*background-position:0 75px;****USE FOR ALERT BAR ABOVE HEADER - Kyle ****/
+	background-position:top;
+	}
+							  
+h1 {
+	margin: 0;
+	font-size: 2.33333333333333em;
+	line-height: 1em;
+	margin-bottom: 1em;
+	font-family: Tahoma, Verdana, Geneva, sans-serif;
+	color: #595959;
+	font-weight: normal;
+	}
+h2							{ margin: 0; max -width:620px;font-size: 1.5em; line-height: 1.1111111111111112em; margin-bottom: 1.1111111111111112em;
+							  font-family: Tahoma, Verdana, Geneva, sans-serif; color: #37847c; font-weight: normal; }
+h3							{ margin: 0; max-width:620px; font-size: 1.3333333333333333em; line-height: 1.25em; margin-bottom: 1.25em;
+							  font-family: Tahoma, Verdana, Geneva, sans-serif; color: #37847c; font-weight: normal; }
+h4							{ margin: 0; max-width:620px; font-size: 1.1666666666666667em; line-height: 1.4285714285714286em; margin-bottom: 1.4285714285714286em;
+							  font-family: Tahoma, Verdana, Geneva, sans-serif; color: #37847c; font-weight: normal; }
+
+.catfont { 
+   margin: 0; 
+   max -width: 620px;
+   font-size: 1.5em; 
+   line-height: 1.1111111111111112em; 
+   margin-bottom: 1.1111111111111112em;
+   font-family: Tahoma, Verdana, Geneva, sans-serif; 
+   color: #37847c; 
+   font-weight: normal; 
+}
+
+
+p, ul, blockquote, 
+pre, td, th, label				{ margin: 0; font-size: 1em; line-height: 1.6666666666666667em; margin-bottom: 1.6666666666666667em; }
+
+p.small {
+	margin: 0;
+	font-size: 0.8333333333333334em;
+	line-height: 2em;
+	margin-bottom: 2em;
+	}
+blockquote {
+	text-indent: -0.8em;
+	}
+
+.indentFormat {padding-left:30px;}
+
+table	{
+	border-collapse: collapse;
+	margin-bottom: 1.6666666666666667em;
+	}
+a {
+	text-decoration: none;
+	outline: none;
+	}	
+a img {
+	border: 0;
+	}
+hr {
+	color: #eaece6;
+	margin-bottom: 1.6em;
+	}
+
+#page-wrap {
+	width:1000px;
+	min-height: 100%;
+	margin:0 auto;
+	margin-bottom: -25px;
+	position: relative;
+	}
+/*_____________ this style is for inline text that is emphasized - Adam */
+.inline-color {
+	color: #37847c;
+	font-size: 1.3333333333333333em;
+	font-weight: normal;
+	}
+.layer1 {
+margin: 0;
+padding: 0;
+width: 700px;
+}
+ 
+.heading1 {
+margin: 2px;
+color: #ffffff;
+padding: 3px 10px;
+cursor: pointer;
+position: relative;
+background-color:#37847c;
+}
+
+.content1 {
+padding: 5px 10px;
+background-color:#ffffff;
+display:none;
+}
+
+/* ================================
+BREADCRUMB NAVIGATION FOR THE BOARD PORTAL - KYLE ============================================
+==================================*/
+.breadcrumbs
+{
+ font-size: 1.2em;
+ font-family: Tahoma, Verdana, Geneva, sans-serif;
+ color: #37847c;
+ position: relative;
+ margin: 0px 0px 0px 160px;
+} 
+
+.whereami
+{
+ font-size: 1.2em;
+ font-family: Tahoma, Verdana, Geneva, sans-serif;
+ font-weigt: bold;
+ color: #37847c;
+ position: relative;
+ margin: 0px 0px 0px 160px;
+}
+/*	======================
+	 Google Maps ========================================================
+============================ */
+ /* Generic map, side bar holder styles */
+      .MapBuilder {font: normal small verdana, arial, helvetica, sans-serif; font-size: 10pt; margin: 0px;}
+      .MapBuilder a {text-decoration: none; color: #0066CC; background-color: transparent;}
+      .MapBuilder a:hover {color: #F60; background-color: transparent;}
+      .MapBuilder h1 {font-weight: bold; font-size: 16pt; color: #369; border-bottom: 2px solid #369;}
+      
+      /* Info Window styles */
+      .IW { width: 350px;}
+      .IWContent {height: 120px; overflow:auto;}
+      .IWCaption {font-weight: bold; font-size: 12pt; color: #369; border-bottom: 2px solid #369;}
+      .IWFooter {margin-top: 5px; font-size: 8pt; }
+      .IWFooterZoom {}
+      .IWDirections{background-color:#FFF;}
+
+      .MapBuilderSideBar {float:left; margin-left: 10px; }
+      /* PDMarker */
+      div.markerTooltip {
+        color: black;
+        background-color: white;
+        white-space: nowrap;
+        margin: 0;
+        padding: 2px 4px;
+        border: 1px solid black;
+      }
+
+.fitbuildings { 
+	font: 12px Tahoma, Arial, sans-serif;
+	line-height: 1.66em; 
+	margin: 0; 
+	padding: 0; 
+}
+.fitbuildings:hover { 
+	font: 12px Tahoma, Arial, sans-serif;
+	line-height: 1.66em; 
+	margin: 0; 
+	padding: 0; 
+	background-color: #F6FF80;
+	cursor: pointer;
+}
+/*	======================
+	 LOGIN PAGE  ========================================================
+============================ */
+
+.tml-action-links {
+	display: none;
+}
+
+/*	======================
+	 MAIN CONTENT ========================================================
+============================ */
+
+.maincontent {
+	width: 800px;
+	margin: 10px 0px 0px 0px;
+	background: url(images/butterfly.png) no-repeat;
+	background-position: right bottom;
+	min-height: 280px;
+	float: right;
+	position: relative;
+	}
+.homePage .maincontent p, .maincontent ul {
+	max-width: 500px;
+	}
+
+.maincontent p, .maincontent ul, .maincontent ol {
+	max-width: 620px;
+	}
+
+.maincontent ul, .maincontent ol {
+	padding-left:30px;
+	} 
+
+.maincontent ul.lcp_catlist {
+	padding-left:0px;
+	list-style:none;
+	} 
+
+.maincontent ul.lcp_catlist li a {
+	font-weight:bold;
+	font-size:1.1em;
+	} 
+
+.maincontent h1 a {
+	position: relative;
+	color: #595959;
+	}
+.maincontent h1 a:hover {
+	color: black;
+	}
+
+.wp-caption p.wp-caption-text {
+    margin: -15px 0 10px 15px;
+    padding: 0;}
+
+
+
+
+.maincontent a img, .maincontent img {
+border:0 none;
+padding:10px 0 10px 15px;
+}
+
+.maincontent a img.imgRight, .maincontent img.imgRight {
+border:0 none;
+display:block;
+float:right;
+padding:10px 0 10px 15px;
+}
+
+.maincontent a img.leftImg, .maincontent img.leftImg {
+border:0 none;
+display:block;
+float:left;
+padding:10px 15px 10px 0px;
+margin-right:10px;
+}
+
+.maincontent .sponsorLogos{ 
+display:block;
+width:680px;
+height:220px;
+margin:0px;}
+
+.maincontent .sponsorLogos a {
+display:block;
+float:left;
+height:110px;
+width:120px;}
+
+.maincontent a img.imgList, .maincontent img.imgList {
+text-align:center;
+padding:0;
+margin:0;
+}
+=================Training Institute Page Styles============
+
+.trainingbox h4 {
+	}
+.trainingbox ul {
+	margin-left: 20px;
+	}
+.trainingbox li {
+	width: 350px;
+	}
+.trainingbox-left {
+	float: left;
+	}
+.trainingbox-right {
+	float: right;
+	}
+.trainingbox-left h4 {
+	background-color: #eaece6;
+	padding: 5px 0px 7px 15px;
+	margin: 0px 30px 10px 0px;
+	width: 350px;
+	}
+.trainingbox-right h4 {
+	background-color: #eaece6;
+	padding: 5px 0px 7px 15px;
+	margin: 0px 30px 10px 0px;
+	width: 350px;
+	}
+li.spacer {
+	color: white;
+	}
+=================VISTA Page Styles============
+
+.success-story span {
+	width: 640px;
+	}
+.success-story img {
+	float: left;
+	margin-right: 15px;
+	}
+.success-story hr {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	}
+
+=================Message from President============
+
+#president {
+	float: left;
+	margin: 0px 20px 10px 0px;
+	}
+#signiture {
+	margin-bottom: 15px;
+	}
+.relative {
+	position: relative;
+	}
+
+
+/*	======================
+	 HEADER =============================================================================
+============================ */
+#header a {
+	position: relative;
+	width: 519px;
+	height: 169px;
+	text-indent: -9999px;
+	background: url(images/logo-fit.png) no-repeat;
+	float: left; clear: both; }
+#header a:hover {
+	background: url(images/logo-fit-hover.png) no-repeat;
+	}
+
+.top-buttons {
+	position: relative;
+	float: right;
+	margin: 15px 0px 0px 0px;
+	}
+.top-buttons li	{
+	width: 120px;
+	height: 38px;
+	position: relative;
+	list-style: none;
+	}
+.top-buttons li a {
+	text-indent: -9999px;
+	position: absolute;
+	}
+
+.GetHelp a {
+	background: url(images/GetHelpButton.png) no-repeat transparent;
+	background-position: 0px 0px;
+	width: 120px;
+	height: 38px; }
+.GetHelp a:hover {
+	background-position: -120px 0px;
+	}
+.GetHelp a:active {
+	background-position: -240px 0px;
+	}
+
+.Donate a {
+	background: url(images/DonateButton.png) no-repeat transparent;
+	background-position: 0px 0px;
+	width: 120px;
+	height: 38px;
+	}
+.Donate a:hover	{
+	background-position: -120px 0px;
+	}
+.Donate a:active {
+	background-position: -240px 0px;
+	}
+
+.Volunteer a {
+	background: url(images/VolunteerButton.png) no-repeat transparent;
+	background-position: 0px 0px;
+	width: 120px;
+	height: 38px;
+	}
+.Volunteer a:hover {
+	background-position: -120px 0px;
+	}
+.Volunteer a:active {
+	background-position: -240px 0px;
+	}
+.Newsletter a {
+	background: url(images/NewsletterButton.png) no-repeat transparent;
+	background-position: 0px 0px;
+	width: 120px;
+	height: 38px;
+	}
+.Newsletter a:hover {
+	background-position: -120px 0px;
+	}
+.Newsletter a:active {
+	background-position: -240px 0px;
+	}
+#searchform {
+	float: right;
+	position: relative;
+	margin-top: 13px;
+	}
+.search-field {
+	width: 210px;
+	height: 30px;
+	border: none;
+	background: transparent;
+	}
+.search-box {
+	width: 197px;
+	height: 22px;
+	background: transparent url(http://www.fitnh.org/wp-content/uploads/2011/09/glass.png) no-repeat;
+	border: none;
+	padding: 5px 35px 5px 10px;
+	}
+.search-box:focus {
+	outline: none;
+	background-position: 0px -32px;
+	padding: 5px 35px 5px 10px;
+	}
+.search-button {
+	width: 10px;
+	height: 10px;
+	background: transparent url(http://www.fitnh.org/wp-content/uploads/2011/09/glass.png) no-repeat;
+	border: none;
+	outline: none;
+	position: absolute;
+	text-indent: -9999px;
+	cursor: pointer;
+	margin-left: -30px;
+	margin-top: 1px;
+	}
+.gsc-clear-button {
+visibility:hidden;
+}
+#gsc-i-id1 {
+	background-image: url('images/SearchBar.png')!important;
+}
+#gsc-i-id1:hover {
+	background-image: none!important;
+}
+#gsc-i-id1:focus {
+	background-image: none!important;
+}
+#googleSearch
+{
+	width:300px;
+	position:absolute;
+	top:125px;
+	right:-10px;
+}
+
+#googleSearch input.gsc-search-button
+{
+	font-size:13px;
+	color:transparent;
+	text-transform:capitalize;
+}
+
+input.gsc-input {
+	border:0 solid #BCCDF0;
+	height:26px;
+	padding-left:4px;
+	width:99%;
+}
+
+
+input.gsc-search-button {
+     background-color: #FFFFFF!important;
+     background-image:url(/wp-content/themes/FIT-MainSiteTheme/images/search_replace.png);
+     background-repeat:no-repeat;
+     background-position: center center;
+     border-color:#FFFFFF!important;
+     display:block;
+     height:28px!important;
+     text-indent:-5555px;
+     width:32px;
+}
+#dialog
+{
+	display:none;
+}
+#alert_statement {
+	width:100%;
+	height:50px;
+	padding:10px 20px 10px 20px;
+	background-color:yellow;
+	border-bottom:thick solid orangered;
+	font-size:1.5em;
+}
+
+/*	======================
+	 MAIN NAVIGATION =============================================================================
+============================ */
+ .menu-main-nav-container
+{
+	z-index:10;
+	width:100%;
+	clear:both;
+	height:36px;
+	margin-bottom:25px; /* ====== Pushes Main Content Down From Navigation - Adam ====== */
+}
+ .menu-main-nav-container  ul.menu  {
+	z-index:100;
+	height: 36px; 
+	position: relative; 
+	float: left;
+	list-style: none; 
+	top: 11px;
+	margin: 0px 0px 25px 0px;
+	width:auto;
+	}
+ .menu-main-nav-container  ul.menu  li {
+	z-index:200;
+	display:block;
+	font-family: Tahoma, Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	border-right: 1px solid #595959;
+	position: relative;
+	height: 14px;
+	margin-top: 13px;
+	float: left; 
+	}
+
+ .menu-main-nav-container  ul.menu  li.lastNav {
+	border-right: 0px solid;
+	}
+
+ .menu-main-nav-container  ul.menu  li a {
+	color: #595959;
+	padding: 8px 13px 10px 13px;
+	position: relative;
+	display: block;
+	text-decoration: none;
+	float: left;
+	margin-top: -14px;
+	}
+ .menu-main-nav-container  ul.menu  li a:hover {
+	color: #FFFFFF;
+	}
+ .menu-main-nav-container  ul.menu  li a:active {
+	top: 2px;
+	}
+.menu-main-nav-container ul.sub-menu
+{ position:absolute; background-color:#addcd7; color:#4d5554;z-index:500; top:20px; left:0; display:none; width:180px;}
+.menu-main-nav-container  ul.sub-menu  li{ border:none; display:block; width:150px; padding:0; float:none; clear:both;}
+.menu-main-nav-container  ul.sub-menu  li a {display:block; padding:3px 20px 3px 5px; width:155px;}
+.menu-main-nav-container  ul.sub-menu  li a:link, .menu-main-nav-container  ul.sub-menu  li a:visited{
+	color:#4d5554;text-decoration:none; display:block;}
+.menu-main-nav-container  ul.sub-menu  li a:hover, .menu-main-nav-container  ul.sub-menu  li a:active {
+	color: #FFFFFF;
+	background-color:#7ec3ba;
+	text-decoration:none;
+	display:block;
+	}
+ 
+ .menu-main-nav-container  ul.menu  li.lastNav {
+	border-right: 0px solid;
+	}
+
+
+
+/*	======================
+	 SIDEBAR ============================================
+============================ */
+#sidebar {
+	width: 150px;
+	border-right: 3px solid #eaece6;
+	float: left;
+	position: relative;
+	padding: 10px 0px 0px 0px;
+	margin: 0px 20px 0px 0px;
+	}
+#sidebar ul, .home-content ul#sidebar  {
+	list-style: none;
+	position: relative;
+	list-style-type:none;
+	position:relative;
+	}
+
+#sidebar ul li {
+	position: relative;
+	list-style: none;
+	width: 140px;
+	min-height: 30px;
+	overflow: hidden;
+	}
+
+#sidebar ul li img, #sidebar ul li img:hover {
+	position: relative;
+	width: 140px;
+	height: 120px;
+	}
+
+#sidebar ul li:hover {
+	width: 140px;
+	overflow: visible;
+	}
+#sidebar ul li:active {
+	width: 140px;
+	top: 0px;
+	}
+#sidebar ul li a {
+	color: #595959;
+	position: absolute;
+	display: block;
+	width: 140px;
+	height: 30px;
+	padding: 0px 0px 0px 5px;
+	}
+#sidebar ul li a:hover {
+	color: #37847C;
+	background-color: #eaece6;
+	width: 140px;
+	}
+#sidebar ul li a:active {
+	width: 140px;
+	}
+
+#sidebar ul.sub-menu li a:hover {
+	color: #37847C;
+	background-color: #eaece6;
+	width: 120px;
+
+	}
+#sidebar ul.sub-menu li a:active {
+	width: 120px;
+	}
+
+
+span.arrow {
+	border-color: transparent transparent transparent #eaece6;
+	border-style: solid;
+	border-width: 15px;
+	width: 0;
+	height: 0;
+	float: right;
+	margin-right: -30px;
+	}
+#motherdaughter {
+	margin: 12px 0px 0px 10px;
+	}
+
+#sidebar ul.sub-menu {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	padding:30px 5px 0 20px;
+	margin:0;
+	position:relative;}
+
+#sidebar ul.sub-menu li {
+	position: relative;
+	width: 130px;
+	min-height: 30px
+	padding:20px 5px 0px 10px;}
+	overflow: hidden;
+	margin:0;
+	}
+#sidebar ul.sub-menu li a:hover, #sidebar ul.sub-menu li a:active{
+	color:#595959;
+	display:block;
+	height:30px;
+	padding:0 0 0 5px;
+	position:absolute;
+	width:120px;}
+
+/*	======================
+	 CONTENT for HOME PAGE ============================================
+============================ */
+.video {
+	margin: 10px 0px 10px 250px;
+	width: 506px;
+	position: relative;
+	}
+#home-butterfly {
+	position:absolute;
+	left: 600px;
+	margin-top: -150px;
+	padding:0px;
+	z-index: -1;
+	}
+
+.home-content p {
+	width: 820px;
+	}
+
+
+/*	======================
+	 Social Media Links ========================================================
+============================ */
+div.SocialMediaLinks
+	{
+	width: 172px;
+	height: 40px;
+	float: right;
+	margin: 8px 0px 10px 6px; 
+	padding: 0;
+	}
+div.SocialMediaLinks li
+	{
+	width: 40px;
+	height: 40px; 
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	margin: 0; padding: 0;
+	}
+div.SocialMediaLinks a
+	{
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px; 
+	
+	}
+div.SocialMediaLinks a:active
+	{
+	top: 2px;	
+	}
+div.SocialMediaLinks a.facebook
+	{
+	background: url(images/SocialMediaLinks.png) no-repeat transparent;
+	background-position: 0px 0px;
+	width: 36px;
+	height: 40px;
+	}
+div.SocialMediaLinks a.facebook:hover
+	{
+	background-position: 0px -40px;
+	}
+div.SocialMediaLinks a:active
+	{
+	background-position: 0px -80px;
+	}
+div.SocialMediaLinks a.twitter
+	{
+	background: url(images/SocialMediaLinks.png) no-repeat transparent;
+	background-position: -37px 0px;
+	width: 36px;
+	height: 40px;
+	}
+div.SocialMediaLinks a.twitter:hover
+	{
+	background-position: -37px -40px;	
+	}
+div.SocialMediaLinks a.twitter:active
+	{
+	background-position: -37px -80px;
+	}
+div.SocialMediaLinks a.rss
+	{
+	background: url(images/SocialMediaLinks.png) no-repeat transparent;
+	background-position: -80px 0px;
+	width: 35px;
+	height: 40px;
+	}
+div.SocialMediaLinks a.rss:hover
+	{
+	background-position: -80px -40px;	
+	}
+div.SocialMediaLinks a.rss:active
+	{
+	background-position: -80px -80px;
+	}
+
+.st_sharethis .stButton .chicklets 
+	{
+	background: url(images/SocialMediaLinks.png) no-repeat transparent;
+	background-position: -109px 0px;
+	width: 36px;
+	height: 40px;
+	padding:0;
+	cursor:pointer;
+	position: relative;
+	display: inline-block;
+	line-height:1.66em;
+	white-space:normal;
+	font-size:12px;
+	z-index:auto;
+	margin: 0 0 0 -10px;
+	bottom:25px;
+	left:5px;
+	/*FOR IE7 and BELOW*/
+	*display: block; 
+	*margin 0;
+	*bottom:3px;
+	*left:5px;
+}
+/**.st_sharethis{
+	display:inline;
+	float:right;
+	height:40px;
+	left:98px;
+	position:relative;
+	top:45px;
+	width:40px;}
+**/
+
+.chicklets:hover{ 
+	background-position: -109px -40px !important;
+	}  
+
+.stButton:hover{ 
+	background-position: -109px -40px !important;
+	}  
+
+.st_sharethis:hover{ 
+	background-position: -109px -40px !important;
+	} 
+
+.stButton:active
+	{
+	background-position: -109px -80px !important;
+	} 
+
+.chicklets:active
+	{
+	background-position: -109px -80px !important;
+	} 
+
+.st_sharethis:active
+	{
+	background-position: -109px -80px !important;
+	}
+
+div.SocialMediaLinks a.youtube_icon {
+	background: url(images/SocialMediaLinks.png) no-repeat transparent;
+	background-position: -145px 0px;
+	width: 40px;
+	height: 40px;
+	padding:0;
+	cursor:pointer;
+}
+
+div.SocialMediaLinks a.youtube_icon:hover
+	{
+	background-position: -145px -40px;
+	}
+div.SocialMediaLinks a.youtube_icon:active
+	{
+	background-position: -145px -80px;
+	}
+
+
+/*	======================
+	 FOOTER =============================================================================
+============================ */
+.clear { 
+	clear: both;
+	}
+.clearfooter {
+	height: 25px;
+	clear: both;
+	}
+#footer {
+	text-align: center;
+	height: 25px;
+	background-color: #9ed8d2;
+	padding-top: 5px;
+	color: #5f6861;
+	margin-top: 20px;
+	position: relative;
+	}
+#footer-wrapper
+	{
+	width: 1000px;
+	margin: 0 auto;
+	}
+.nocomments {
+	display: none;
+}
+ol.commentlist {
+	margin:0;
+	padding:0;
+	width: 500px
+	}
+
+.commentlist li {
+	list-style:none;
+	margin-bottom:10px;
+	width: 500px
+	}
+
+.commentlist cite {
+	padding: 5px;
+	display:block;
+	font-style:normal;
+	background:url(http://www.yoursite.com/images/bg_comments2_cite.gif);
+	border-top:1px solid #d6e4c1;
+	border-bottom:1px solid #779d42;
+	color:#596e3b;
+	width: 500px
+	}
+
+.commentlist a:link, .commentlist a:visited {
+	color:#596e3b;
+	}
+
+.commentlist a:hover, .commentlist a:active {
+	color:#8ec343;
+	}
+
+.commentlist cite img {
+	padding:1px;
+	border:1px solid #aab59a;
+	float:left;
+	margin-right:9px;
+	width: 500px
+	}
+
+.commentlist .author {
+	font: small-caps bold 1.2em Georgia, "Times New Roman", Times, serif;
+	text-decoration:underline;
+	}
+
+.commentlist .time {
+	padding-left:5px;
+	}
+
+.commenttext {
+	border:1px solid #c5f386;
+	padding: 0 20px 10px 20px;
+	color:#fafcf6;
+	width: 500px
+	}
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	background-color:#b0e0e6;
+	}	
+
+/****************======advanced comment styles======****************/
+ 
+h3#comments,.comment-navigation,.comment-navigation:after,#respond:after,.comment-rss{display:block} 
+ol.commentlist{width:100%} 
+h3#comments,#respond h3{height:25px;text-align:left;background:#4c7faa;color:#fff;padding:5px 0 0 5px} 
+ol.commentlist,li.authorcomment,li.comment,#respond h3,form#commentform,input#submit{margin:0}
+ol.commentlist,ol.commentlist ul,form#commentform{padding:0}  
+ol.commentlist{border-bottom:1px solid #ccc} 
+ol.commentlist ul{margin:0 0 0 20px} 
+li.authorcomment,li.comment,form#commentform textarea,form#commentform input{border:1px solid #ccc}
+li.authorcomment,li.comment{padding:10px 0 0 10px;list-style:none;border-bottom:none} 
+li.even{background:#fff} 
+li.odd{background:#efefef} 
+.authorcomment{background:#deebf9} 
+ul.children ul{margin-left:20px} 
+ul.children li{border-right:none} 
+.vcard img{float:left;background:#c4c4c4} 
+.vcard img,.comment-navigation .newer a,.comment-navigation .older a{padding:5px} 
+.comment-meta,ol.commentlist li small,p.subscribe-to-comments label{position:relative} 
+.comment-meta,ol.commentlist li small{top:10px;left:10px} 
+.comment-text{margin:0 10px 0 0} 
+.reply,.comment-navigation .newer,input#submit{float:right} 
+.reply,.comment-navigation .newer a,.comment-navigation .older a,input#submit{background:#4c7faa} 
+.reply{margin:0 10px 10px 0} 
+a.comment-reply-link,.reply a:link,
+.comment-navigation .newer a,.comment-navigation .older a,input#submit{display:inline-block;text-align:center;cursor:pointer;color:#fff} 
+a.comment-reply-link,.reply a:link{padding:5px 0} a.comment-reply-link,.reply a:link,input#submit{width:70px} 
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,
+.comment-navigation .older a:hover,input#submit:hover{background:#e7e7e7;text-decoration:none;color:#4c7faa;font-weight:bold} 
+a.comment-reply-link:hover,.reply a:hover,input#submit:hover{width:68px} 
+a.comment-reply-link:hover,.reply a:hover{padding:4px 0} 
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,.comment-navigation .older a:hover{border:1px solid #4c7faa} 
+.comment-navigation{margin:10px 0 10px 0} .comment-navigation:after,#respond:after{content:".";height:0;visibility:hidden} 
+.clear{clear:both} 
+.comment-navigation .newer a:hover,.comment-navigation .older a:hover{padding:4px} 
+form#commentform textarea,form#commentform input{padding:2px 3px} 
+form#commentform textarea{width:442px} 
+input#submit{padding:5px 0 !important;border:0 !important} 
+input#submit,p.subscribe-to-comments input{outline:0} 
+input#submit:hover{padding:4px 0 !important;border:1px solid #4c7faa !important} 
+p.subscribe-to-comments{background:url('images/email_32.png') no-repeat} 
+p.subscribe-to-comments,.comment-rss{height:32px;text-indent:42px;padding:5px 0 0 0} 
+p.subscribe-to-comments input{margin:5px 3px 3px 3px !important;border:0} 
+p.subscribe-to-comments label{top:-2px;color:#666} 
+.comment-rss{background:url('images/rss_32.png') no-repeat} 
+ 
+/*==============comment total styling=================*/
+ 
+.comment-total{text-align: center;font-size: 1.5em;color: #fff;}
+.comment-total span{font-size: 2em;color: #800000;}
+
+/* ===============Recent Comments==================*/
+
+.recent-comment {
+	list-style-type: none;
+	margin-top: 10px;
+	/*ie fix*/ zoom: 1;
+}
+
+.recent-comment:after { content: "."; display: block; height: 0; font-size: 0; line-height: 0; clear: both; visibility: hidden; }
+
+.recent-comment .recent-comment-avatar {
+	display: none;
+}
+
+.recent-comment .avatar {
+	display: none;
+}
+
+.recent-comment .icon-comment {
+	vertical-align: text-top;
+}
+
+.recent-comment-single {
+	display: block;
+	margin-left: -30px;
+}
+
+.recent-comment-tb .recent-comment-single {
+	display: inline;
+	margin-left: -30px;
+}
+
+.recent-comment-credit {
+	font-size: 0.8em;
+	color: #aaaaaa;
+}
+
+.recent-comment-author {
+	font-weight: bold;
+	background: url("../images/icon_comment.png") no-repeat right center;
+	padding-right: 2px;
+	overflow: hidden;
+}
+
+.recent-comment-text {
+	overflow: hidden;
+	color: darkslategray;
+}
+
+/* ajax nav */
+.bwp-rc-ajax-nav {
+	list-style-type: none;
+	list-style-position: inside;
+	text-align: right;
+}
+
+/*	======================
+	 LOGINPAGE=============================================================================
+============================ */
+
+.login label {
+	display:inline;
+	float:left;
+	position:relative;
+	width:100px;
+	font-weight:bold;
+}
+
+.login input{
+	display:inline;
+	position:relative;
+	width:150px;
+}
+
+#rememberme {
+	width:150px;
+}
+#dodgeball_button_container {
+width:300px;
+height:100px;
+margin:auto auto;
+}
+#dodgeball_button {
+width:300px;
+height:100px;
+background: url('http://www.fitnh.org/wp-content/uploads/2013/09/dodgeball_button.png') no-repeat scroll 0 0 transparent;
+clear:both; 
+float:left; 
+position:relative; 
+text-indent:-9999px;
+}
+#dodgeball_button:hover {
+background-position: -300px 0px; 
+}
+#dodgeball_button:active{
+background-position: -600px 0px; 
+}
+.meeting-packets { 
+width:100%;
+}
+.meeting-packets td { 
+padding: 4px 1px 4px 1px;
+}
