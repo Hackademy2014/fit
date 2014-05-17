@@ -36,6 +36,8 @@
 		9238F8781927E31F0020F176 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F86B1927E31F0020F176 /* JSONKeyMapper.m */; };
 		9238F8791927E31F0020F176 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F86D1927E31F0020F176 /* JSONValueTransformer.m */; };
 		9238F87A1927E31F0020F176 /* LICENSE_jsonmodel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9238F86E1927E31F0020F176 /* LICENSE_jsonmodel.txt */; };
+		9238F87E1927E5870020F176 /* FITGetInvolvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F87D1927E5870020F176 /* FITGetInvolvedViewController.m */; };
+		9238F8811927E62A0020F176 /* FITEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8801927E62A0020F176 /* FITEventsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,10 @@
 		9238F86C1927E31F0020F176 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		9238F86D1927E31F0020F176 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		9238F86E1927E31F0020F176 /* LICENSE_jsonmodel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_jsonmodel.txt; sourceTree = "<group>"; };
+		9238F87C1927E5870020F176 /* FITGetInvolvedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITGetInvolvedViewController.h; sourceTree = "<group>"; };
+		9238F87D1927E5870020F176 /* FITGetInvolvedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITGetInvolvedViewController.m; sourceTree = "<group>"; };
+		9238F87F1927E62A0020F176 /* FITEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITEventsViewController.h; sourceTree = "<group>"; };
+		9238F8801927E62A0020F176 /* FITEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITEventsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,10 @@
 				9238F8231927DDE10020F176 /* Main.storyboard */,
 				9238F8261927DDE10020F176 /* FITAboutViewController.h */,
 				9238F8271927DDE10020F176 /* FITAboutViewController.m */,
+				9238F87C1927E5870020F176 /* FITGetInvolvedViewController.h */,
+				9238F87D1927E5870020F176 /* FITGetInvolvedViewController.m */,
+				9238F87F1927E62A0020F176 /* FITEventsViewController.h */,
+				9238F8801927E62A0020F176 /* FITEventsViewController.m */,
 				9238F82C1927DDE10020F176 /* Images.xcassets */,
 				9238F8181927DDE10020F176 /* Supporting Files */,
 			);
@@ -384,6 +394,7 @@
 				9238F8721927E31F0020F176 /* JSONModelClassProperty.m in Sources */,
 				9238F8741927E31F0020F176 /* NSArray+JSONModel.m in Sources */,
 				9238F8281927DDE10020F176 /* FITAboutViewController.m in Sources */,
+				9238F87E1927E5870020F176 /* FITGetInvolvedViewController.m in Sources */,
 				9238F8711927E31F0020F176 /* JSONModelArray.m in Sources */,
 				9238F8791927E31F0020F176 /* JSONValueTransformer.m in Sources */,
 				9238F8781927E31F0020F176 /* JSONKeyMapper.m in Sources */,
@@ -391,6 +402,7 @@
 				9238F8701927E31F0020F176 /* JSONModel.m in Sources */,
 				9238F81E1927DDE10020F176 /* main.m in Sources */,
 				9238F8771927E31F0020F176 /* JSONModel+networking.m in Sources */,
+				9238F8811927E62A0020F176 /* FITEventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
