@@ -30,7 +30,8 @@
     // Do any additional setup after loading the view.
     
     self.donationView.delegate = self;
-    FITGivingModel *model = [[FITGivingModel alloc] init];
+    NSError* err = nil;
+    FITGivingModel *model = [[FITGivingModel alloc] initWithString: @"" error: &err];
     self.donationView.dataSource = model;
 }
 

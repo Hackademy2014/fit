@@ -7,11 +7,14 @@
 //
 
 #import "JSONModel.h"
+#import "FITCategory.h"
 
 @protocol CategoryModel
 
 @end
 
 @interface FITCategoryModel : JSONModel
+
+@property (nonatomic, strong) FITCategory *category;
 
 @end

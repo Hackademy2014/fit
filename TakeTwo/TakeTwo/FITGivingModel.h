@@ -8,9 +8,11 @@
 
 #import "JSONModel.h"
 #import "FITCategoryModel.h"
+#import "FITLocationModel.h"
 
 @interface FITGivingModel : JSONModel <UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray<CategoryModel> *categories;
+@property (nonatomic, strong) NSArray<LocationModel> *locations;
 
 @end

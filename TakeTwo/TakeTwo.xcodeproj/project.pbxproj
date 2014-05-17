@@ -38,6 +38,9 @@
 		9238F87A1927E31F0020F176 /* LICENSE_jsonmodel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9238F86E1927E31F0020F176 /* LICENSE_jsonmodel.txt */; };
 		9238F87E1927E5870020F176 /* FITGetInvolvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F87D1927E5870020F176 /* FITGetInvolvedViewController.m */; };
 		9238F8811927E62A0020F176 /* FITEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8801927E62A0020F176 /* FITEventsViewController.m */; };
+		9238F8841927EAD50020F176 /* FITLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8831927EAD50020F176 /* FITLocationModel.m */; };
+		9238F8871927EBDA0020F176 /* FITCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8861927EBDA0020F176 /* FITCategory.m */; };
+		9238F88A1927EC590020F176 /* FITDonationItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238F8891927EC590020F176 /* FITDonationItemModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,12 @@
 		9238F87D1927E5870020F176 /* FITGetInvolvedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITGetInvolvedViewController.m; sourceTree = "<group>"; };
 		9238F87F1927E62A0020F176 /* FITEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITEventsViewController.h; sourceTree = "<group>"; };
 		9238F8801927E62A0020F176 /* FITEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITEventsViewController.m; sourceTree = "<group>"; };
+		9238F8821927EAD50020F176 /* FITLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITLocationModel.h; sourceTree = "<group>"; };
+		9238F8831927EAD50020F176 /* FITLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITLocationModel.m; sourceTree = "<group>"; };
+		9238F8851927EBDA0020F176 /* FITCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITCategory.h; sourceTree = "<group>"; };
+		9238F8861927EBDA0020F176 /* FITCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITCategory.m; sourceTree = "<group>"; };
+		9238F8881927EC590020F176 /* FITDonationItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITDonationItemModel.h; sourceTree = "<group>"; };
+		9238F8891927EC590020F176 /* FITDonationItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITDonationItemModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,11 +285,17 @@
 			isa = PBXGroup;
 			children = (
 				9238F8491927E2D00020F176 /* FITCategoryModel.h */,
-				9238F84A1927E2D00020F176 /* FITGivingModel.h */,
 				9238F84C1927E2D00020F176 /* FITCategoryModel.m */,
+				9238F84A1927E2D00020F176 /* FITGivingModel.h */,
 				9238F84D1927E2D00020F176 /* FITGivingModel.m */,
 				9238F84B1927E2D00020F176 /* FITGivingViewController.h */,
 				9238F84E1927E2D00020F176 /* FITGivingViewController.m */,
+				9238F8821927EAD50020F176 /* FITLocationModel.h */,
+				9238F8831927EAD50020F176 /* FITLocationModel.m */,
+				9238F8851927EBDA0020F176 /* FITCategory.h */,
+				9238F8861927EBDA0020F176 /* FITCategory.m */,
+				9238F8881927EC590020F176 /* FITDonationItemModel.h */,
+				9238F8891927EC590020F176 /* FITDonationItemModel.m */,
 			);
 			name = Giving;
 			sourceTree = "<group>";
@@ -388,12 +403,15 @@
 				9238F8751927E31F0020F176 /* JSONAPI.m in Sources */,
 				9238F8731927E31F0020F176 /* JSONModelError.m in Sources */,
 				9238F86F1927E31F0020F176 /* JSONModel+CoreData.m in Sources */,
+				9238F88A1927EC590020F176 /* FITDonationItemModel.m in Sources */,
 				9238F8511927E2D00020F176 /* FITGivingViewController.m in Sources */,
+				9238F8871927EBDA0020F176 /* FITCategory.m in Sources */,
 				9238F8221927DDE10020F176 /* FITAppDelegate.m in Sources */,
 				9238F84F1927E2D00020F176 /* FITCategoryModel.m in Sources */,
 				9238F8721927E31F0020F176 /* JSONModelClassProperty.m in Sources */,
 				9238F8741927E31F0020F176 /* NSArray+JSONModel.m in Sources */,
 				9238F8281927DDE10020F176 /* FITAboutViewController.m in Sources */,
+				9238F8841927EAD50020F176 /* FITLocationModel.m in Sources */,
 				9238F87E1927E5870020F176 /* FITGetInvolvedViewController.m in Sources */,
 				9238F8711927E31F0020F176 /* JSONModelArray.m in Sources */,
 				9238F8791927E31F0020F176 /* JSONValueTransformer.m in Sources */,
