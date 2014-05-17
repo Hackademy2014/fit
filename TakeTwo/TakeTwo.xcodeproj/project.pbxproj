@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7514F52F1927F82200A6C3CE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7514F52E1927F82200A6C3CE /* EventKit.framework */; };
 		9238F8121927DDE10020F176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8111927DDE10020F176 /* Foundation.framework */; };
 		9238F8141927DDE10020F176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8131927DDE10020F176 /* CoreGraphics.framework */; };
 		9238F8161927DDE10020F176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8151927DDE10020F176 /* UIKit.framework */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7514F52E1927F82200A6C3CE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		9238F80E1927DDE10020F176 /* TakeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238F8111927DDE10020F176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9238F8131927DDE10020F176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7514F52F1927F82200A6C3CE /* EventKit.framework in Frameworks */,
 				9238F8141927DDE10020F176 /* CoreGraphics.framework in Frameworks */,
 				9238F8161927DDE10020F176 /* UIKit.framework in Frameworks */,
 				9238F8121927DDE10020F176 /* Foundation.framework in Frameworks */,
@@ -162,6 +165,7 @@
 		9238F8101927DDE10020F176 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7514F52E1927F82200A6C3CE /* EventKit.framework */,
 				9238F8111927DDE10020F176 /* Foundation.framework */,
 				9238F8131927DDE10020F176 /* CoreGraphics.framework */,
 				9238F8151927DDE10020F176 /* UIKit.framework */,
@@ -625,6 +629,7 @@
 				9238F8451927DDE10020F176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9238F8461927DDE10020F176 /* Build configuration list for PBXNativeTarget "TakeTwoTests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +638,7 @@
 				9238F8481927DDE10020F176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
