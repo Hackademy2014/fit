@@ -10,6 +10,6 @@
 
 @interface FITGivingViewController : UIViewController <UITableViewDelegate>
 
-@property (nonatomic, strong) UITableView *donationView;
+@property (nonatomic, strong) IBOutlet UITableView *donationView;
 
 @end

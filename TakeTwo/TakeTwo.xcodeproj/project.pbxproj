@@ -277,9 +277,9 @@
 			children = (
 				9238F8491927E2D00020F176 /* FITCategoryModel.h */,
 				9238F84A1927E2D00020F176 /* FITGivingModel.h */,
-				9238F84B1927E2D00020F176 /* FITGivingViewController.h */,
 				9238F84C1927E2D00020F176 /* FITCategoryModel.m */,
 				9238F84D1927E2D00020F176 /* FITGivingModel.m */,
+				9238F84B1927E2D00020F176 /* FITGivingViewController.h */,
 				9238F84E1927E2D00020F176 /* FITGivingViewController.m */,
 			);
 			name = Giving;
