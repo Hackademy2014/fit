@@ -7,6 +7,7 @@
 //
 
 #import "FITVolunteerViewController.h"
+#import "PlaceAnnotation.h"
 
 @interface FITVolunteerViewController ()
 
@@ -52,10 +53,14 @@
      [self.myWebView loadRequest:urlReq];*/
     
     NSString *data = [self loadPageSource:(webPage)]; //This needs overloads or a variable for URL
-    [self saveMainPage:@"volunteer.html" FromContent:data]; //Define different .html pages later?
+    NSString *content = [self saveMainPage:@"volunteer.html" FromContent:data]; //Define different .html pages later?
+    
+    /*NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    self.mTemporaryUrl = documentsDirectory;
     
     NSString *contentUrl = [NSString stringWithFormat:@"%@%@", self.mTemporaryUrl, @"/volunteer.html"];
-    NSString *content = [NSString stringWithContentsOfFile:contentUrl encoding:NSUTF8StringEncoding error:nil];
+    NSString *content = [NSString stringWithContentsOfFile:contentUrl encoding:NSUTF8StringEncoding error:nil];*/
     
     [self.myWebView loadHTMLString:content baseURL:nil];
 }
@@ -87,12 +92,12 @@
     if(startContent.location == NSNotFound)
     {
         //Uh oh
-        UIAlertView *noMainContentAlert = [[UIAlertView alloc] initWithTitle:@"Uh oh."
+        /*UIAlertView *noMainContentAlert = [[UIAlertView alloc] initWithTitle:@"Uh oh."
                                                                      message:@"Something seems to have gone wrong."
                                                                     delegate:nil
                                                            cancelButtonTitle:@"OK"
                                                            otherButtonTitles:nil];
-        [noMainContentAlert show];
+        [noMainContentAlert show];*/
         
         //For loading local html/css files...
         NSBundle *mainBundle = [NSBundle mainBundle];
@@ -106,17 +111,23 @@
         NSString *tmpContent = [pageSource substringFromIndex:startContent.location];
         content = [NSString stringWithFormat:@"%@%@", @"<div class=\"", tmpContent];
         
+        /*NSString *viewportHeader = @"<html><head><link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\"><style>div {min-width:device-width;}</style></head><body>";
+        content = [NSString stringWithFormat:@"%@%@", viewportHeader, content];
+        
+        NSString *footer = @"</body></html>";
+        content = [NSString stringWithFormat:@"%@%@", content, footer];*/
+        
         NSRange endContent = [content rangeOfString:endContentKeyword];
         
         if(endContent.location == NSNotFound)
         {
             //Oh my
-            UIAlertView *undefinedEndAlert = [[UIAlertView alloc] initWithTitle:@"Uh oh."
+            /*UIAlertView *undefinedEndAlert = [[UIAlertView alloc] initWithTitle:@"Uh oh."
                                                                         message:@"Something seems to have gone wrong."
                                                                        delegate:nil
                                                               cancelButtonTitle:@"OK"
                                                               otherButtonTitles:nil];
-            [undefinedEndAlert show];
+            [undefinedEndAlert show];*/
             
             //For loading local html/css files...
             NSBundle *mainBundle = [NSBundle mainBundle];
@@ -129,17 +140,26 @@
         {
             content = [content substringToIndex:endContent.location];
             
-            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            /*NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
             
             NSString *documentsDirectory = [paths objectAtIndex:0];
             self.mTemporaryUrl = documentsDirectory;
             
             NSString *path = [documentsDirectory stringByAppendingPathComponent:fileName];
-            [content writeToFile:path atomically:YES];
+            [content writeToFile:path atomically:YES];*/
         }
     }
     
     return content;
+}
+
+- (PlaceAnnotation*) makeAnnotationForMapItem:(MKMapItem*)item locationTitle:(NSString*)title {
+    PlaceAnnotation *annotation = [[PlaceAnnotation alloc] init];
+    annotation.coordinate = item.placemark.location.coordinate;
+    annotation.title = title;
+    annotation.url = item.url;
+    
+    return annotation;
 }
 
 /*

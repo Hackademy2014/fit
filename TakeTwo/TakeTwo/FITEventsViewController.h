@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FITEventsViewController : UIViewController
+#define EVENTS_PAGE_URL @"http://www.fitnh.org/news-events/events/"
+
+@interface FITEventsViewController  : UIViewController
+
+@property (nonatomic, strong) IBOutlet UIWebView *myWebView;
+@property NSString *mTemporaryUrl;
 
 @end

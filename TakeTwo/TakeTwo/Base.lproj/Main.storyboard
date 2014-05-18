@@ -16,42 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
-                                <rect key="frame" x="20" y="158" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the first view controller — an instance of FITFirstViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Hv-Q7E">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="rDj-Sg-2Zj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background_Tile.png" translatesAutoresizingMaskIntoConstraints="NO" id="huR-AP-hlA">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="578"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77938392509999999" green="0.95268654340000003" blue="0.5723089401" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frontpagelogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1co-7u-9sg">
+                                <rect key="frame" x="14" y="20" width="299" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5wB-Hm-ID6">
+                                <rect key="frame" x="8" y="265" width="305" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Mission                                                          To provide safe, affordable housing and comprehensive social services to individuals and families who are homeless or at risk of becoming homeless, enabling them to gain self-sufficiency and respect. </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="tZ3-Hv-Q7E" secondAttribute="trailing" constant="20" symbolic="YES" id="94m-GQ-azi"/>
-                            <constraint firstItem="tZ3-Hv-Q7E" firstAttribute="top" secondItem="Zhg-ve-WU7" secondAttribute="bottom" constant="40" id="G3o-MK-III"/>
-                            <constraint firstItem="Zhg-ve-WU7" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="JQj-gp-vk2"/>
-                            <constraint firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" constant="20" symbolic="YES" id="eHs-J5-0HT"/>
-                            <constraint firstItem="tZ3-Hv-Q7E" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="lKy-m9-LcB"/>
-                            <constraint firstAttribute="centerY" secondItem="tZ3-Hv-Q7E" secondAttribute="centerY" id="xLM-BA-nZb"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info-2-5ME.png" id="u1e-5L-l1D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-75" y="-506"/>
         </scene>
-        <!--Get Involved View Controller - Get Involved-->
+        <!--Volunteer View Controller - Get Involved-->
         <scene sceneID="HqD-dW-d5e">
             <objects>
-                <viewController id="zHL-QL-cJR" customClass="FITGetInvolvedViewController" sceneMemberID="viewController">
+                <viewController id="zHL-QL-cJR" customClass="FITVolunteerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tfh-pU-i6f"/>
                         <viewControllerLayoutGuide type="bottom" id="K3d-aJ-rgN"/>
@@ -59,13 +52,96 @@
                     <view key="view" contentMode="scaleToFill" id="abz-0C-Pvy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1X-Og-R64">
+                                <rect key="frame" x="0.0" y="32" width="320" height="438"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.77938392509999999" green="0.95268654340000003" blue="0.5723089401" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77938392505119569" green="0.95268654336734693" blue="0.57230894009893707" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Get Involved" id="bb1-Nr-62b"/>
+                    <tabBarItem key="tabBarItem" title="Get Involved" image="Hand.png" id="bb1-Nr-62b"/>
+                    <connections>
+                        <outlet property="myWebView" destination="m1X-Og-R64" id="WKw-UX-S8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84D-CZ-kAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-75" y="864"/>
+        </scene>
+        <!--Locate View Controller - Locate-->
+        <scene sceneID="8z8-GE-Rr5">
+            <objects>
+                <viewController id="TsB-Ng-02s" customClass="FITLocateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D3k-RF-21Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="HIp-iQ-Ihf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ur-Ql-4bE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FoS-5Q-qrc">
+                                <rect key="frame" x="0.0" y="106" width="320" height="356"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNg-yK-YbM" userLabel="Bar">
+                                <rect key="frame" x="0.0" y="18" width="580" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Housing" id="OZo-5v-qvs">
+                                        <connections>
+                                            <action selector="toolBarButtonPress:" destination="TsB-Ng-02s" id="NQP-LX-LE9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Food Pantry" id="cat-g7-Lg5">
+                                        <connections>
+                                            <action selector="toolBarButtonPress:" destination="TsB-Ng-02s" id="Xx1-4w-WFu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Thrift Store" id="tIE-ch-BHi">
+                                        <connections>
+                                            <action selector="toolBarButtonPress:" destination="TsB-Ng-02s" id="MhZ-4f-gEZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07T-3L-Htf">
+                                <rect key="frame" x="0.0" y="62" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Donation Center" id="s4m-fm-NZo">
+                                        <connections>
+                                            <action selector="toolBarButtonPress:" destination="TsB-Ng-02s" id="QNG-bQ-RrI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Recovery Services" id="A4o-V6-oe1">
+                                        <connections>
+                                            <action selector="toolBarButtonPress:" destination="TsB-Ng-02s" id="9N2-OE-gbI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Locate" image="ThisLocation.png" id="d8g-DO-kJn"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OUa-w4-YXF"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DonationButton" destination="s4m-fm-NZo" id="8u0-f5-S2z"/>
+                        <outlet property="FoodPantryButton" destination="cat-g7-Lg5" id="bvY-Sk-aEI"/>
+                        <outlet property="HousingButton" destination="OZo-5v-qvs" id="h77-i3-Sqn"/>
+                        <outlet property="RecoveryServicesButton" destination="A4o-V6-oe1" id="18Z-wT-kcw"/>
+                        <outlet property="ThriftStoreButton" destination="tIE-ch-BHi" id="nYm-9b-7BC"/>
+                        <outlet property="myMapView" destination="FoS-5Q-qrc" id="VcS-wy-SIC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5V-VV-wnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-601" y="1635"/>
         </scene>
         <!--Events View Controller - Events-->
         <scene sceneID="5z5-fm-mRf">
@@ -78,9 +154,20 @@
                     <view key="view" contentMode="scaleToFill" id="xzW-gb-2ig">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fl-dY-hyj">
+                                <rect key="frame" x="0.0" y="29" width="320" height="410"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.77938392509999999" green="0.95268654340000003" blue="0.5723089401" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77938392509999999" green="0.95268654340000003" blue="0.5723089401" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Events" id="LXz-CU-EkR"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="pushpinTHISONE.png" id="LXz-CU-EkR"/>
+                    <connections>
+                        <outlet property="myWebView" destination="1fl-dY-hyj" id="X4j-zh-4Hb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYG-G6-zs1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,17 +185,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fkz-f1-YCG">
-                                <rect key="frame" x="0.0" y="20" width="320" height="339"/>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-zj-yGD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="418"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                                <color key="backgroundColor" red="0.77938392509999999" green="0.95268654340000003" blue="0.5723089401" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.77938392509999999" green="0.95268654340000003" blue="0.5723089401" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Giving" image="Ecommerce-Gift.png" id="Z7h-1E-pvt"/>
                     <connections>
-                        <outlet property="donationView" destination="fkz-f1-YCG" id="fl3-Mc-vpt"/>
+                        <outlet property="myWebView" destination="zfE-zj-yGD" id="Dvb-J1-DGS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
@@ -130,6 +217,7 @@
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                         <segue destination="zHL-QL-cJR" kind="relationship" relationship="viewControllers" id="Jl0-Of-4kc"/>
                         <segue destination="TBq-Bc-rO1" kind="relationship" relationship="viewControllers" id="OEa-Bd-uCZ"/>
+                        <segue destination="TsB-Ng-02s" kind="relationship" relationship="viewControllers" id="Enb-zJ-kzX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -138,8 +226,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Background_Tile.png" width="206" height="143"/>
+        <image name="Ecommerce-Gift.png" width="30" height="30"/>
+        <image name="Hand.png" width="31" height="35"/>
+        <image name="ThisLocation.png" width="35" height="35"/>
+        <image name="frontpagelogo.png" width="363" height="294"/>
+        <image name="info-2-5ME.png" width="30" height="30"/>
+        <image name="pushpinTHISONE.png" width="35" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
