@@ -40,13 +40,13 @@
 		75AFFB8E1928A77300A2B690 /* largest.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AFFB8D1928A77300A2B690 /* largest.png */; };
 		75AFFB901928A96F00A2B690 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AFFB8F1928A96F00A2B690 /* icon.png */; };
 		75AFFB921928ABBC00A2B690 /* iosicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AFFB911928ABBC00A2B690 /* iosicon.png */; };
+		75AFFF9B192E32EA00070A4B /* give.html in Resources */ = {isa = PBXBuildFile; fileRef = 75AFFF9A192E32EA00070A4B /* give.html */; };
 		75B13D7A19292AA3008358B3 /* ThisLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B13D7919292AA3008358B3 /* ThisLocation.png */; };
 		75EA547B1928C0D1001F3011 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EA547A1928C0D1001F3011 /* MapKit.framework */; };
 		75EA547D1928C0EF001F3011 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EA547C1928C0EF001F3011 /* CoreLocation.framework */; };
 		75EA54841928C633001F3011 /* FITLocateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA54831928C633001F3011 /* FITLocateViewController.m */; };
 		75EA548A1928E28D001F3011 /* FITAnnonation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA54891928E28D001F3011 /* FITAnnonation.m */; };
 		75EA548D1928F291001F3011 /* FITLocationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA548C1928F291001F3011 /* FITLocationData.m */; };
-		75EA54931929033C001F3011 /* give.html in Resources */ = {isa = PBXBuildFile; fileRef = 75EA54921929033C001F3011 /* give.html */; };
 		9238F8121927DDE10020F176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8111927DDE10020F176 /* Foundation.framework */; };
 		9238F8141927DDE10020F176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8131927DDE10020F176 /* CoreGraphics.framework */; };
 		9238F8161927DDE10020F176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238F8151927DDE10020F176 /* UIKit.framework */; };
@@ -130,6 +130,7 @@
 		75AFFB8D1928A77300A2B690 /* largest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largest.png; sourceTree = "<group>"; };
 		75AFFB8F1928A96F00A2B690 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		75AFFB911928ABBC00A2B690 /* iosicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iosicon.png; sourceTree = "<group>"; };
+		75AFFF9A192E32EA00070A4B /* give.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = give.html; path = ../../Resources/give.html; sourceTree = "<group>"; };
 		75B13D7919292AA3008358B3 /* ThisLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThisLocation.png; sourceTree = "<group>"; };
 		75EA547A1928C0D1001F3011 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		75EA547C1928C0EF001F3011 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -139,7 +140,6 @@
 		75EA54891928E28D001F3011 /* FITAnnonation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITAnnonation.m; sourceTree = "<group>"; };
 		75EA548B1928F291001F3011 /* FITLocationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITLocationData.h; sourceTree = "<group>"; };
 		75EA548C1928F291001F3011 /* FITLocationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITLocationData.m; sourceTree = "<group>"; };
-		75EA54921929033C001F3011 /* give.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = give.html; path = ../../../../Desktop/give.html; sourceTree = "<group>"; };
 		9238F80E1927DDE10020F176 /* TakeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238F8111927DDE10020F176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9238F8131927DDE10020F176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -320,7 +320,7 @@
 		9238F8171927DDE10020F176 /* TakeTwo */ = {
 			isa = PBXGroup;
 			children = (
-				75EA54921929033C001F3011 /* give.html */,
+				75AFFF9A192E32EA00070A4B /* give.html */,
 				75EA547E1928C1A8001F3011 /* Locate */,
 				75AFFB5D19284B1200A2B690 /* Volunteer */,
 				75AFFB5C1928425A00A2B690 /* Events */,
@@ -563,7 +563,7 @@
 				7546F68E19281F0500BFEF41 /* Gift_Home.png in Resources */,
 				7546F68B19281F0500BFEF41 /* butterfly.png in Resources */,
 				75AFFB70192867D100A2B690 /* Ecommerce-Gift.png in Resources */,
-				75EA54931929033C001F3011 /* give.html in Resources */,
+				75AFFF9B192E32EA00070A4B /* give.html in Resources */,
 				7546F68D19281F0500BFEF41 /* Family_Place_Project.png in Resources */,
 				75AFFB6419285C0200A2B690 /* hands.png in Resources */,
 				75AFFB921928ABBC00A2B690 /* iosicon.png in Resources */,
